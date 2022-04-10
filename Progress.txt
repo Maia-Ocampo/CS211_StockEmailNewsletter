@@ -14,7 +14,8 @@ receive the following information:    
 * The percent changes 
 
 This project will assist investors, beginners, and veterans alike, make sound and effective decisions which would aid them in their investing journey. 
-With the plethora of information, this project will condense down a lot of the information that the user needs to make good financial decisions.  
+With the plethora of information, this project will condense down a lot of the information that the user needs to make good financial decisions. Current
+progress Code has been pushed to the Master branch of the repository. 
 
 Progress Reports: 
 As of right now, we have completed a big chunk of the project. We have completed the graphical user interface (GUI) that will first appear when the user 
