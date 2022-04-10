@@ -1,0 +1,17 @@
+Progress for CS 211 Project 
+Group Members: Maia Ocampo, Aymaan Bokth, Wasiq Muhammad Ali 
+ 
+Overview of the Project:  
+We plan to create an email newsletter that will share stock information every day the New York Stock Exchange is open. The application will ask the user to log in using their email and password; if they do not have an account, they will be prompted to make one. Users will then choose the stocks that they want information on and then the users will receive an email with the information each day. The user will receive the following information:    
+* The current stock prices 
+* The PE ratio 
+* The book values 
+* The market caps 
+* The floating share values 
+* The percent changes 
+
+This project will assist investors, beginners, and veterans alike, make sound and effective decisions which would aid them in their investing journey. With the plethora of information, this project will condense down a lot of the information that the user needs to make good financial decisions.  
+
+Progress Reports: 
+As of right now, we have completed a big chunk of the project. We have completed the graphical user interface (GUI) that will first appear when the user wishes to log in with their email and password along with buttons that will lead to the user to login or create new users respectively. The login button will re-direct to another GUI panel which is in progress. Furthermore, we have completed the part of the code that will send out the email; we have done this using the JavaMail API, which will send the email. Lastly, we have a big part of the web scraper that will find the information for the stocks that the user selects. One thing that we are currently struggling with is how to make a SQL server to make a database for logins and signups so that we can have a list of all emails and stocks, that way the user can login and the automated email may traverse through it to send out all the user’s selected info on their stocks. The last issue we have is that we do not know how to send emails at a particular time. It is unclear if we should set up a server or create an API that runs perpetually and sends an email every day at 10AM. Any guidance on this matter would be very much appreciated. Other than that, we believe that we are in a good place to finish the project in a timely manner.  
+
