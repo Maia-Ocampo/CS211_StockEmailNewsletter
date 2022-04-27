@@ -99,7 +99,7 @@ public class Connection {
 	}
 
 	/**
-	 * This method creates an ArrayList for each user's email.
+	 * This method creates an array for each user's stock list.
 	 * @param email
 	 * @return dict
 	 * @throws SQLException
