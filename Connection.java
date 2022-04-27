@@ -105,9 +105,9 @@ public class Connection {
 	 * @throws SQLException
 	 */
 	
-	public static ArrayList<String> getStockInfo(String email) throws SQLException{
+	public static String[] getStockInfo(String email) throws SQLException{
 		
-		ArrayList<String> dict = new ArrayList<String>();
+		String[] list = null;
 		
 		connect();
 		
@@ -117,12 +117,22 @@ public class Connection {
 		
 		while(rs.next()) {
 			
-			dict.add(rs.getString(3));
+			list = rs.getString(3).split(",");
+			
+			/*System.out.println(Arrays.toString(list));
+			 * This line ^^^ Just prints everything out. Testing reasons only
+			 */
 			
 		}
 		
-		System.out.println(dict);
-		return dict;
+		
+		//for (int i = 0; i < list.length; i++) {
+			
+			//System.out.println(list[i]);
+			
+		//} This just made sure everything worked smoothly
+
+		return list;
 		
 		
 	}
