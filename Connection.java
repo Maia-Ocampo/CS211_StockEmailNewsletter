@@ -101,13 +101,14 @@ public class Connection {
 	/**
 	 * This method creates an array for each user's stock list.
 	 * @param email
-	 * @return dict
+	 * @return stocks
 	 * @throws SQLException
 	 */
 	
-	public static String[] getStockInfo(String email) throws SQLException{
+	public static ArrayList<String> getStockInfo(String email) throws SQLException{
 		
-		String[] list = null;
+		ArrayList<String> stocks = new ArrayList<String>();
+		String str;
 		
 		connect();
 		
@@ -117,22 +118,22 @@ public class Connection {
 		
 		while(rs.next()) {
 			
-			list = rs.getString(3).split(",");
+			str = rs.getString(3);
+			str.replaceAll("\\s", "");
 			
-			/*System.out.println(Arrays.toString(list));
-			 * This line ^^^ Just prints everything out. Testing reasons only
-			 */
+			String[] list = str.split(",");
+			
+			for(int i = 0; i < list.length; i++) {
+				
+				stocks.add(list[i]);
+				
+			}
+			
 			
 		}
 		
-		
-		//for (int i = 0; i < list.length; i++) {
-			
-			//System.out.println(list[i]);
-			
-		//} This just made sure everything worked smoothly
 
-		return list;
+		return stocks;
 		
 		
 	}
